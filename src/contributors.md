@@ -1,6 +1,7 @@
 # Contributors
 
 - Nam Pho ([@npho](https://github.com/npho))
+- John Danielsson ([@johnd32](https://github.com/johnd32))
 
 ### mdBook
 
