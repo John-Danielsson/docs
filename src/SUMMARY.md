@@ -25,6 +25,7 @@
       - [Building Code](building_code.md)
       - [Mathematica](mathematica.md)
       - [MATLAB](matlab.md)
+      - [Python](python.md)
       - [R](r_programming.md)
       - [Ruby](ruby.md)
 - [Help / Support / Consult](support.md)

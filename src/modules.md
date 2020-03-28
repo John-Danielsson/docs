@@ -7,17 +7,21 @@ _NB: It is preferable to use Singularity to create containers instead instead of
 Different users may use different versions of some software, so Hyak has the module command which allows you to use a specific version of some software.
 
 This command will load the module for R version 3.2.0:
+
 ```module load r_3.2.0```
 
 After the above command, you can issue commands such as R, Rscript etc.
 
 This command shows all the available modules:
+
 ```module avail```
 
 This command shows your currently loaded modules:
+
 ```module list```
 
 This command unloads the module for R version 3.2.0:
+
 ```module unload r_3.2.0```
 
 _NB: The modules starting with the prefix contrib/ are created by Hyak users and are not maintained by the Hyak team._
@@ -27,9 +31,11 @@ _NB: The modules starting with the prefix contrib/ are created by Hyak users and
 ### Examples of Module Files
 
 On Ikt, you can see module files at:
+
 ```/sw/Modules/modulefiles```
 
 On Mox, you can see module files at:
+
 ```/sw/modules-1.775/modulefiles```
 
 ### How to Create Your Own Modules
@@ -62,20 +68,25 @@ Suppose version 1.0 of your executable program "myprogram" is in the directory /
 
 After doing the steps in the previous section, you can issue the below command to load your module.
 
-(1) Issue this command to verify that your module contrib/myprogram_groupname/1.0 shows up.
-    ```module avail contrib```
+(1) Issue this command to verify that your module contrib/myprogram_groupname/1.0 shows up:
 
-(2) Issue this command to load your module.
-    ```module load contrib/myprogram_groupname/1.0```
+```module avail contrib```
 
-(3) Issue this command to verify that your module is loaded.
-    ```module list```
+(2) Issue this command to load your module:
 
-(4) Issue this command to verify that you can run myprogram.
-    ```myprogram```
+```module load contrib/myprogram_groupname/1.0```
 
-(5) Issue this command to unload your module.
-    ```module unload contrib/myprogram_groupname/1.0```
+(3) Issue this command to verify that your module is loaded:
+
+```module list```
+
+(4) Issue this command to verify that you can run myprogram:
+
+```myprogram```
+
+(5) Issue this command to unload your module:
+
+```module unload contrib/myprogram_groupname/1.0```
 
 The below links have more information.
 https://modules.readthedocs.io/en/stable/module.html

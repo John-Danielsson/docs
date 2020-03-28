@@ -1,6 +1,6 @@
 # Hyak MATLAB programming
 
-As usual, "username" is your userid and "groupname" is your group name.
+As usual, "username" is your user ID and "groupname" is your group name.
 
 ## Interactive Use of MATLAB
 
@@ -50,7 +50,7 @@ Obtain an interactive node as shown above. Then type the below commands to get a
 
 At the matlab prompt enter this command to find the list of toolboxes:
 
-```>>ver```
+```ver```
 
 We have a large number of toolboxes. Here are some popular toolboxes:
 - Image Processing Toolbox
@@ -67,9 +67,9 @@ Do not use the build node for matlab parallel programming. The build node is for
 
 At the MATLAB prompt enter below command to start the parallel pool:
 
-```>> numCores = feature('numcores');```
+```numCores = feature('numcores');```
 
-```>> parpool(numCores)```
+```parpool(numCores)```
 
 Now you can use parfor, etc. (If you run parpool without giving the number of cores, then the default number of cores is 12. It is _not_ the number of cores on the machine; "numCores" above is the number of cores allocated to your job by Slurm.)
 
@@ -83,6 +83,7 @@ The file trypar.m contains the below code. A semicolon after a matlab command me
 
 1) Create a local cluster object.
 myCluster = ```parcluster('local');```
+
 2) Set the JobStorageLocation to the temporary directory that was created in your slurm script.
 ```myCluster.JobStorageLocation = strcat('/gscratch/groupname/username/', getenv('SLURM_JOB_ID'));```
 
@@ -124,7 +125,7 @@ In fprintf(), fileID=1 is for printing to STDOUT and fileID=2 is for printing to
 
 [More information on disp().](https://www.mathworks.com/help/matlab/ref/disp.html)
 
-Use this to get data from STDIN:
+**To get data from STDIN:**
 
 ```x = input('', 's')```
 
@@ -136,8 +137,7 @@ Use this to get data from STDIN:
 
 [Matlab Java Memory Usage](https://www.mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html)
 
-
-_======== Ignore below text. It is here for historical reasons. ===========_
+_Ignore the text below. It is here for historical reasons._
 
 _myCluster.NumWorkers = 28;_  
 

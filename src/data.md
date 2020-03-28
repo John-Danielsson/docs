@@ -22,6 +22,7 @@ IKT: ```mmlsquota -j hyak-mygroup  --block-size G suppscr```
 Usage reporting is written to each group's space hourly in a file at the root of the directory called usage_report.txt. Reports can also be sent by e-mail weekly (Monday morning) and daily when your group is over their quota. If you're interested in e-mail reporting, please contact us.
 
 ### Home Directories
+
 Each Hyak user also has a home directory which is shared among al Hyak nodes. Quotas are set to 10GB with a limit of 5,000 files. Hyak home directories are intended for files you want to keep completely private (ssh keys) or which are completely unique to you (your login scripts). They are not for storing big code source trees or doing any computation. The home filesystem is small and slow, so please limit your work to the scratch filesystems. **Home directories are not backed up.**
 
 Check your /home quota with the mmlsquota command:
@@ -88,7 +89,7 @@ Files written to the archive are cached on disk before being migrated to tape. O
 
 After this you can use SFTP or SCP to transfer subdir.tar to lolo.
 
-More details on that:
+**More details on that**
 
 When interacting with the Archive filesystem it is very important to avoid unnecessarily recalling files from tape. In most cases, opening an archived file requires recalling it from tape. This triggers a sequence of events:
 

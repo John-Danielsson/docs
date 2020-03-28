@@ -230,7 +230,7 @@ Installing RMPI can be complicated. Hence, on mox.hyak use the below command to 
 
 For an example of a slurm sbatch script, see the section on "Batch usage Single Node" in the below link. Replace ```--nodes=1``` with ```--ntasks=M```. Here ```M``` is the number of cores that you want the Rmpi program to use. The slurm scheduler will use the ```--ntasks``` value to calculate how many nodes should be assigned to your job.
 
-### Mox_scheduler
+[Mox Scheduler](mox_scheduler.md)
 
 In your slurm sbatch script, use below commands to run your Rmpi program. Replace ```mpi_example.R``` by the name of your Rmpi program.
 

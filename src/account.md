@@ -1,16 +1,19 @@
 # Getting a Hyak Account
 
 ## Information for Users
+
 If you want to get a Hyak account, ask a node owner (usually the faculty member leading your research group or the IT director for your academic unit) to submit a request following the instructions below. If you're unsure about whether you are entitled to access to Hyak, ask the faculty member leading your research group or your college or department IT director.
 
 **Important:** Make sure to get the DuoMobile App on your mobile device and create an account using your UW NetID.
 
 ## For Students
+
 If you are a UW student, then click [this link](https://depts.washington.edu/uwrcc/getting-started-2/getting-started/) to get access to the STF queue.
 
 If you are not in the above two categories and would like to try out Hyak then use your UW e-mail account to send an e-mail to help@uw.edu and request acccess to the genpool queue.
 
 ## Information for Node Owners
+
 If you own nodes on Hyak and would like to to grant access to a new user, then follow the steps below.
 
 * Every user of the Hyak system must have a UW NetID. If a person is not affiliated with the University of Washington and you would like them to have access to Hyak, a [Sponsored UW NetID](http://www.washington.edu/itconnect/accounts/sponsored.html) must be requested for that user.

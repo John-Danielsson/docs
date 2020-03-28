@@ -1,3 +1,3 @@
 # Are you an external collaborator?
 
-If so, you should reach out to 
+_This section will be completed at a later date._
